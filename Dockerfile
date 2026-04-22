@@ -1,5 +1,5 @@
 # https://hub.docker.com/_/alpine
-FROM docker.io/library/alpine:3.23.3
+FROM docker.io/library/alpine:3.23.4
 
 RUN apk add --no-cache samba-dc krb5 krb5-pkinit openssl cyrus-sasl libldap kubectl ldb-tools yq && \
     rm -rf /etc/samba /var/lib/samba /var/log/samba && \
